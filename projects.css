@@ -1,0 +1,177 @@
+.projects-hero {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        color: white;
+        padding: 120px 0 80px;
+        text-align: center;
+      }
+      
+      .projects-hero h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      
+      .projects-hero p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .project-filters {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+      
+      .filter-btn {
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #0f3460;
+        background: transparent;
+        color: #0f3460;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 500;
+      }
+      
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: #0f3460;
+        color: white;
+      }
+      
+      .project-detailed {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .project-detailed:hover {
+        transform: translateY(-5px);
+      }
+      
+      .project-image-large {
+        height: 250px;
+        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4rem;
+        color: #0f3460;
+      }
+      
+      .project-info {
+        padding: 2rem;
+      }
+      
+      .project-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      
+      .project-category {
+        background: linear-gradient(45deg, #0f3460, #4ecdc4);
+        color: white;
+        padding: 0.3rem 1rem;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      
+      .project-date {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      
+      .project-features {
+        margin: 1.5rem 0;
+      }
+      
+      .project-features h4 {
+        font-family: 'Poppins', sans-serif;
+        color: #1a1a2e;
+        margin-bottom: 0.5rem;
+      }
+      
+      .project-features ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .project-features li {
+        padding: 0.3rem 0;
+        color: #555;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+      
+      .project-features li::before {
+        content: '✓';
+        color: #4ecdc4;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+      
+      @media (max-width: 768px) {
+        .projects-hero h1 {
+          font-size: 2rem;
+        }
+        
+        .project-meta {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+        }
+      }
+
+      /* Extra Line  */
+       .under-construction {
+            position: relative;
+            margin: 24px 0 48px;
+            padding: 28px 22px;
+            border-radius: 16px;
+            border: 2px dashed rgba(245, 158, 11, 0.35);
+            background-image: linear-gradient(
+              135deg,
+              rgba(245, 158, 11, 0.06) 25%,
+              rgba(245, 158, 11, 0.12) 25% 50%,
+              rgba(245, 158, 11, 0.06) 50% 75%,
+              rgba(245, 158, 11, 0.12) 75%
+            );
+            background-size: 22px 22px;
+            animation: uc-stripes 8s linear infinite;
+            text-align: center;
+            box-shadow: 0 10px 28px rgba(17, 24, 39, 0.08);
+          }
+          .under-construction .uc-icon {
+            font-size: 42px;
+            color: #f59e0b;
+            margin-bottom: 10px;
+            animation: uc-bob 1.8s ease-in-out infinite;
+          }
+          .under-construction h2 {
+            margin: 0 0 6px;
+            font-weight: 600;
+            color: #111827;
+          }
+          .under-construction p {
+            margin: 0;
+            color: #6b7280;
+          }
+          @keyframes uc-stripes {
+            to { background-position: 22px 22px; }
+          }
+          @keyframes uc-bob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+          }
